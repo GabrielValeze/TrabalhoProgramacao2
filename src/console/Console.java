@@ -109,4 +109,5 @@ public class Console {
     public void setControle(boolean controle) {
         this.controleUm = controle;
     }
+    
 }
