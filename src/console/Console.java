@@ -26,10 +26,10 @@ public class Console {
 //    Console console1;
     public void ligar() {
 
-        if (IsOn() == false) {
+        if (isOn() == false) {
             // vai ligar
             setLigar(true);
-        } else if (IsOn() == true) {
+        } else if (isOn() == true) {
             // vai desligar
             setLigar(false);
         }
@@ -66,7 +66,7 @@ public class Console {
         return memory;
     }
     
-    public boolean IsOn() {
+    public boolean isOn() {
         return isOn;
     }
     

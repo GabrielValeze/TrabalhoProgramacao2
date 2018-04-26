@@ -185,7 +185,7 @@ public class Tela extends javax.swing.JFrame {
 
     private void LigarConsoleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LigarConsoleActionPerformed
         console.ligar();
-        if (console.IsOn() == true) {
+        if (console.isOn() == true) {
             ligar.setText("ligado");
         } else {
             ligar.setText("desligado");
