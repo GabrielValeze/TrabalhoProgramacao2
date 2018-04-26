@@ -78,7 +78,7 @@ public class Console {
         return controleUm;
     }
     
-    public boolean TampaDoDisco(){
+    public boolean tampaDoDisco(){
         return estaAberta;
     }
 

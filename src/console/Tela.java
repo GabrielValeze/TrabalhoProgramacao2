@@ -224,7 +224,7 @@ public class Tela extends javax.swing.JFrame {
 
     private void AbrirTampaDeDiscoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AbrirTampaDeDiscoActionPerformed
          console.abrirTampa();
-         if (console.TampaDoDisco() == true) {
+         if (console.tampaDoDisco() == true) {
             tampa.setText("Aberta");
         } else {
             tampa.setText("Fechada");
