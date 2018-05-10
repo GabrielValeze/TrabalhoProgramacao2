@@ -39,8 +39,8 @@ public class Tela extends javax.swing.JFrame {
         ligar = new javax.swing.JTextField();
         ligar1 = new javax.swing.JTextField();
         tampa = new javax.swing.JTextField();
-        MemoryCard = new javax.swing.JTextField();
-        ControleTexto = new javax.swing.JTextField();
+        memoryCard = new javax.swing.JTextField();
+        controleTexto = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -92,15 +92,15 @@ public class Tela extends javax.swing.JFrame {
             }
         });
 
-        MemoryCard.addActionListener(new java.awt.event.ActionListener() {
+        memoryCard.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MemoryCardActionPerformed(evt);
+                memoryCardActionPerformed(evt);
             }
         });
 
-        ControleTexto.addActionListener(new java.awt.event.ActionListener() {
+        controleTexto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ControleTextoActionPerformed(evt);
+                controleTextoActionPerformed(evt);
             }
         });
 
@@ -129,8 +129,8 @@ public class Tela extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(ControleTexto, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
-                            .addComponent(MemoryCard)
+                            .addComponent(controleTexto, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+                            .addComponent(memoryCard)
                             .addComponent(tampa)
                             .addComponent(ligar))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
@@ -158,11 +158,11 @@ public class Tela extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(memory)
-                    .addComponent(MemoryCard, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(memoryCard, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(controle)
-                    .addComponent(ControleTexto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(controleTexto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 113, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
@@ -177,9 +177,9 @@ public class Tela extends javax.swing.JFrame {
     private void controleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_controleActionPerformed
         console.inserirControle();
         if(console.controleUm() == true){
-            ControleTexto.setText("Conectado");
+            controleTexto.setText("Conectado");
         } else {
-            ControleTexto.setText("Desconectado");
+            controleTexto.setText("Desconectado");
         }
     }//GEN-LAST:event_controleActionPerformed
 
@@ -196,9 +196,9 @@ public class Tela extends javax.swing.JFrame {
     private void memoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_memoryActionPerformed
         console.inserirMemoria();
          if (console.memory() == true) {
-            MemoryCard.setText("Inserido");
+            memoryCard.setText("Inserido");
         } else {
-            MemoryCard.setText("Removido");
+            memoryCard.setText("Removido");
         }
     }//GEN-LAST:event_memoryActionPerformed
 
@@ -210,13 +210,13 @@ public class Tela extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_ligar1ActionPerformed
 
-    private void MemoryCardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MemoryCardActionPerformed
+    private void memoryCardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_memoryCardActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_MemoryCardActionPerformed
+    }//GEN-LAST:event_memoryCardActionPerformed
 
-    private void ControleTextoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ControleTextoActionPerformed
+    private void controleTextoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_controleTextoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ControleTextoActionPerformed
+    }//GEN-LAST:event_controleTextoActionPerformed
 
     private void tampaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tampaActionPerformed
         
@@ -268,10 +268,9 @@ public class Tela extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField ControleTexto;
-    private javax.swing.JTextField MemoryCard;
     private javax.swing.JButton abrirTampaDeDisco;
     private javax.swing.JButton controle;
+    private javax.swing.JTextField controleTexto;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel6;
@@ -280,6 +279,7 @@ public class Tela extends javax.swing.JFrame {
     private javax.swing.JTextField ligar1;
     private javax.swing.JButton ligarConsole;
     private javax.swing.JButton memory;
+    private javax.swing.JTextField memoryCard;
     private javax.swing.JTextField tampa;
     // End of variables declaration//GEN-END:variables
 }

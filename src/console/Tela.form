@@ -48,8 +48,8 @@
                   </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="ControleTexto" alignment="0" pref="100" max="32767" attributes="0"/>
-                          <Component id="MemoryCard" alignment="0" max="32767" attributes="0"/>
+                          <Component id="controleTexto" alignment="0" pref="100" max="32767" attributes="0"/>
+                          <Component id="memoryCard" alignment="0" max="32767" attributes="0"/>
                           <Component id="tampa" alignment="0" max="32767" attributes="0"/>
                           <Component id="ligar" alignment="0" max="32767" attributes="0"/>
                       </Group>
@@ -86,12 +86,12 @@
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="memory" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="MemoryCard" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="memoryCard" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="controle" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="ControleTexto" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="controleTexto" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="0" pref="113" max="32767" attributes="0"/>
           </Group>
@@ -164,14 +164,14 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tampaActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="MemoryCard">
+    <Component class="javax.swing.JTextField" name="memoryCard">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MemoryCardActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="memoryCardActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="ControleTexto">
+    <Component class="javax.swing.JTextField" name="controleTexto">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ControleTextoActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="controleTextoActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
