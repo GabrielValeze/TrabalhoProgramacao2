@@ -31,10 +31,10 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                  <Component id="Controle" alignment="0" max="32767" attributes="0"/>
-                  <Component id="Memory" alignment="0" max="32767" attributes="0"/>
-                  <Component id="LigarConsole" max="32767" attributes="0"/>
-                  <Component id="AbrirTampaDeDisco" max="32767" attributes="0"/>
+                  <Component id="controle" alignment="0" max="32767" attributes="0"/>
+                  <Component id="memory" alignment="0" max="32767" attributes="0"/>
+                  <Component id="ligarConsole" max="32767" attributes="0"/>
+                  <Component id="abrirTampaDeDisco" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -72,25 +72,25 @@
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="LigarConsole" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ligarConsole" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="ligar" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="AbrirTampaDeDisco" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="abrirTampaDeDisco" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="tampa" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="Memory" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="memory" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="MemoryCard" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="Controle" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="controle" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="ControleTexto" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="0" pref="113" max="32767" attributes="0"/>
@@ -111,36 +111,36 @@
         <Property name="text" type="java.lang.String" value="Playstation 2"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="LigarConsole">
+    <Component class="javax.swing.JButton" name="ligarConsole">
       <Properties>
         <Property name="text" type="java.lang.String" value="Ligar/Desligar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="LigarConsoleActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ligarConsoleActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="AbrirTampaDeDisco">
+    <Component class="javax.swing.JButton" name="abrirTampaDeDisco">
       <Properties>
         <Property name="text" type="java.lang.String" value="Abrir Tampa de Disco"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AbrirTampaDeDiscoActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="abrirTampaDeDiscoActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="Memory">
+    <Component class="javax.swing.JButton" name="memory">
       <Properties>
         <Property name="text" type="java.lang.String" value="Inserir/Tirar Memory"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MemoryActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="memoryActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="Controle">
+    <Component class="javax.swing.JButton" name="controle">
       <Properties>
         <Property name="text" type="java.lang.String" value="Inserir/Tirar Controle"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ControleActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="controleActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">

@@ -29,10 +29,10 @@ public class Tela extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        LigarConsole = new javax.swing.JButton();
-        AbrirTampaDeDisco = new javax.swing.JButton();
-        Memory = new javax.swing.JButton();
-        Controle = new javax.swing.JButton();
+        ligarConsole = new javax.swing.JButton();
+        abrirTampaDeDisco = new javax.swing.JButton();
+        memory = new javax.swing.JButton();
+        controle = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -46,31 +46,31 @@ public class Tela extends javax.swing.JFrame {
 
         jLabel1.setText("Playstation 2");
 
-        LigarConsole.setText("Ligar/Desligar");
-        LigarConsole.addActionListener(new java.awt.event.ActionListener() {
+        ligarConsole.setText("Ligar/Desligar");
+        ligarConsole.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                LigarConsoleActionPerformed(evt);
+                ligarConsoleActionPerformed(evt);
             }
         });
 
-        AbrirTampaDeDisco.setText("Abrir Tampa de Disco");
-        AbrirTampaDeDisco.addActionListener(new java.awt.event.ActionListener() {
+        abrirTampaDeDisco.setText("Abrir Tampa de Disco");
+        abrirTampaDeDisco.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AbrirTampaDeDiscoActionPerformed(evt);
+                abrirTampaDeDiscoActionPerformed(evt);
             }
         });
 
-        Memory.setText("Inserir/Tirar Memory");
-        Memory.addActionListener(new java.awt.event.ActionListener() {
+        memory.setText("Inserir/Tirar Memory");
+        memory.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MemoryActionPerformed(evt);
+                memoryActionPerformed(evt);
             }
         });
 
-        Controle.setText("Inserir/Tirar Controle");
-        Controle.addActionListener(new java.awt.event.ActionListener() {
+        controle.setText("Inserir/Tirar Controle");
+        controle.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ControleActionPerformed(evt);
+                controleActionPerformed(evt);
             }
         });
 
@@ -115,10 +115,10 @@ public class Tela extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(Controle, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Memory, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(LigarConsole, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(AbrirTampaDeDisco, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(controle, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(memory, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(ligarConsole, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(abrirTampaDeDisco, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -146,22 +146,22 @@ public class Tela extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(LigarConsole)
+                    .addComponent(ligarConsole)
                     .addComponent(jLabel2)
                     .addComponent(jLabel6)
                     .addComponent(ligar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(AbrirTampaDeDisco)
+                    .addComponent(abrirTampaDeDisco)
                     .addComponent(jLabel7)
                     .addComponent(tampa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Memory)
+                    .addComponent(memory)
                     .addComponent(MemoryCard, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Controle)
+                    .addComponent(controle)
                     .addComponent(ControleTexto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 113, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -174,16 +174,16 @@ public class Tela extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void ControleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ControleActionPerformed
+    private void controleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_controleActionPerformed
         console.inserirControle();
         if(console.controleUm() == true){
             ControleTexto.setText("Conectado");
         } else {
             ControleTexto.setText("Desconectado");
         }
-    }//GEN-LAST:event_ControleActionPerformed
+    }//GEN-LAST:event_controleActionPerformed
 
-    private void LigarConsoleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LigarConsoleActionPerformed
+    private void ligarConsoleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ligarConsoleActionPerformed
         console.ligar();
         if (console.isOn() == true) {
             ligar.setText("ligado");
@@ -191,16 +191,16 @@ public class Tela extends javax.swing.JFrame {
             ligar.setText("desligado");
         }
 
-    }//GEN-LAST:event_LigarConsoleActionPerformed
+    }//GEN-LAST:event_ligarConsoleActionPerformed
 
-    private void MemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MemoryActionPerformed
+    private void memoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_memoryActionPerformed
         console.inserirMemoria();
          if (console.memory() == true) {
             MemoryCard.setText("Inserido");
         } else {
             MemoryCard.setText("Removido");
         }
-    }//GEN-LAST:event_MemoryActionPerformed
+    }//GEN-LAST:event_memoryActionPerformed
 
     private void ligarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ligarActionPerformed
         // TODO add your handling code here:
@@ -222,7 +222,7 @@ public class Tela extends javax.swing.JFrame {
         
     }//GEN-LAST:event_tampaActionPerformed
 
-    private void AbrirTampaDeDiscoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AbrirTampaDeDiscoActionPerformed
+    private void abrirTampaDeDiscoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_abrirTampaDeDiscoActionPerformed
          console.abrirTampa();
          if (console.tampaDoDisco() == true) {
             tampa.setText("Aberta");
@@ -230,7 +230,7 @@ public class Tela extends javax.swing.JFrame {
             tampa.setText("Fechada");
         }
 
-    }//GEN-LAST:event_AbrirTampaDeDiscoActionPerformed
+    }//GEN-LAST:event_abrirTampaDeDiscoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -268,18 +268,18 @@ public class Tela extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton AbrirTampaDeDisco;
-    private javax.swing.JButton Controle;
     private javax.swing.JTextField ControleTexto;
-    private javax.swing.JButton LigarConsole;
-    private javax.swing.JButton Memory;
     private javax.swing.JTextField MemoryCard;
+    private javax.swing.JButton abrirTampaDeDisco;
+    private javax.swing.JButton controle;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JTextField ligar;
     private javax.swing.JTextField ligar1;
+    private javax.swing.JButton ligarConsole;
+    private javax.swing.JButton memory;
     private javax.swing.JTextField tampa;
     // End of variables declaration//GEN-END:variables
 }
